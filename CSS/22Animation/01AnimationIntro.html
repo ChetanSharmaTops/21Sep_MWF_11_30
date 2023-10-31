@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation In CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+            animation-name: magic;
+            animation-duration: 5s;
+            /* animation-iteration-count: 5; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        /* @keyframes magic {
+            from{
+                background-color: teal;
+                margin-left: 0;
+            }
+            to{
+                background-color: crimson;
+                margin-left: 500px;
+
+            }
+        } */
+        @keyframes magic {
+            0%{
+                background-color: teal;
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            20%{
+                background-color: rgb(220, 137, 20);
+                margin-left: 500px;
+                margin-top: 0px;
+            }
+            40%{
+                background-color: rgb(77, 220, 20);
+                margin-top: 200px;
+                margin-left: 500px;
+                border-radius: 50%;
+            }
+            60%{
+                background-color: rgb(12, 234, 234);
+                /* background: url(../../Image/car.avif)no-repeat center center/cover; */
+                margin-top: 200px;
+                margin-left: 0px;
+                transform: rotate(90deg);
+            }
+            80%{
+                background-color: rgb(107, 20, 220);
+                margin-left: 0px;
+                margin-top: 400px;
+            }
+            100%{
+                background-color: rgb(220, 20, 190);
+                margin-top: 400px;
+                margin-left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: teal;
+        }
+        body{
+            background-color: tan;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 10px solid slateblue;
+            margin: 0 auto;
+            background-color: crimson;
+            color: aliceblue;
+        }
+        p{
+            font-size: 50px;
+            display: none;
+        }
+        input[type="checkbox"]{
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+        }
+        input:checked + p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click Menu</h1>
+    <hr>
+    <div class="box">
+        <input type="checkbox">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, quis.</p>
+    </div>
+</body>
+</html>

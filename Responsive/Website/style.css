@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+#header{
+    background-color: crimson;
+    color: aliceblue;
+}
+#section1{
+    background-color: teal;
+    color: khaki;
+
+}
+#section2{
+    background-color: rgb(128, 0, 55);
+    color: aliceblue;
+
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 50px;
+    /* flex-wrap: wrap; */
+
+
+}
+img{
+    width: 100%;
+}
+.col-50{
+    width: 50%;
+}
+.col-25{
+    width: 25%;
+}
+.col-33{
+    width: 33.33%;
+}
+.main-text{
+    text-align: center;
+    padding: 50px;
+}
+h1{
+    font-size: 50px;
+    padding: 10px;
+}
+h1+p{
+    font-size: 35px;
+    padding: 10px;
+}
+h2{
+    font-size: 35px;
+    padding: 10px;
+}
+h2+p{
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+/* Media Query */
+
+@media (max-width: 1400px) { 
+    .row{
+        flex-wrap: nowrap;
+    }
+    .col-50{
+        width: 50%;
+    }
+    .col-25{
+        width: 25%;
+    }
+    .col-33{
+        width: 33.33%;
+    }
+
+}
+
+@media (max-width: 1200px) { 
+    .row{
+        /* gap: 10px; */
+        /* justify-content: center; */
+        flex-wrap: nowrap;
+    }
+    .col-50{
+        width: 50%;
+    }
+    .col-25{
+        width: 25%;
+    }
+    .col-33{
+        width: 33.33%;
+    }
+
+}
+
+
+@media (max-width: 992px) { 
+    .row{
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .col-50{
+        width: 49%;
+    }
+    .col-25{
+        width: 49%;
+    }
+    .col-33{
+        width: 49%;
+    }
+
+}
+
+
+@media (max-width: 768px) { 
+    .row{
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .col-25{
+        width: 49%;
+    }
+    .col-33{
+        width: 49%;
+    }
+   
+
+ }
+
+
+@media (max-width: 576px) { 
+    .row{
+        flex-direction: column;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .col-25{
+        width: 100%;
+    }
+    .col-33{
+        width: 100%;
+    }
+    .main-text{
+        padding: 50px 0px;
+    }
+ }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position In CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        .fixed{
+            position: fixed;
+            top: 0;
+            right: 0;
+            font-size: 50px;
+            background-color: black;
+            color: aliceblue;
+        }
+        div[class*="box"]{
+            height: 500px;
+        }
+        .sticky{
+            position: sticky;
+            background-color: crimson;
+            color: aliceblue;
+            font-size: 30px;
+            top: 0;
+        }
+        .box-5{
+            position: relative;
+        }
+        div[class*="box-ab"]{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+        }
+        .box-ab-1{
+            top: 0px;
+            left: 0px;
+            background-color: teal;
+            z-index: 1;
+        }
+        .box-ab-2{
+            top: 0px;
+            right: 0px;
+            background-color: rgb(253, 0, 0);
+            z-index: 1;
+        }
+        .box-ab-3{
+            bottom: 0px;
+            right: 0px;
+            background-color: rgb(52, 245, 4);
+        }
+        .box-ab-4{
+            bottom: 0px;
+            left: 0px;
+            background-color: rgb(101, 0, 253);
+            /* z-index: 1; */
+        }
+        .box-ab-5{
+            top: 120px;
+            left: 150px;
+            background-color: rgb(232, 0, 253);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">Fixed</div>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">Box-3
+        <div class="sticky">Sticky</div>
+    </div>
+    <div class="box-4">Box-4</div>
+    <div class="box-5">Box-5
+        <div class="box-ab-1">box-ab-1</div>
+        <div class="box-ab-2">box-ab-2</div>
+        <div class="box-ab-3">box-ab-3</div>
+        <div class="box-ab-4">box-ab-4</div>
+        <div class="box-ab-5">box-ab-5</div>
+    </div>
+</body>
+</html>

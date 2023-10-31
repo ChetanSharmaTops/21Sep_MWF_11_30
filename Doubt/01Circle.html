@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: teal;
+            border: 10px solid black;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            /* margin: 0 auto; */
+            margin-left: 100px;
+        }
+        .line{
+            height: 800px;
+            width: 10px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 200px;
+        }
+        .parent{
+            position: relative;
+            /* margin-left: 110px; */
+            border: 1px solid black;
+        }
+        .box-parent{
+            margin-left: 90px;
+            padding-left: 20px;
+            /* border: 10px solid green; */
+        }
+        .box-parent-child{
+            /* margin-left: 20px; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box-parent">
+            <div class="box-parent-child">
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+</body>
+</html>
