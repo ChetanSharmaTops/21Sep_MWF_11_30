@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        // console.log(a);
-        // a = 10;
-        // console.log(a);
-        // let a;
-        // var a;
+      // console.log(a);
+      // a = 10;
+      // console.log(a);
+      // let a;
+      // var a;
 
-        a = 9
-        // b= '9.0'
-        // console.log(b>a);
-        // console.log(b.length);
-        // console.log(a.length);
+      // a = 9
+      // b= '9.0'
+      // console.log(b>a);
+      // console.log(b.length);
+      // console.log(a.length);
+      // console.log(a);
+      // console.log(a.toString());
+
+      var a = 10;
+      console.log(a);
+      function outer() {
+        var a = 10;
         console.log(a);
-        console.log(a.toString());
-
+        function inner() {
+          var a = 15;
+          console.log(a);
+        }
+        inner()
+      }
+      outer();
+      console.log(a);
     </script>
-</body>
+  </body>
 </html>
