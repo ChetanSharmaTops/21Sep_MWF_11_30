@@ -26,8 +26,15 @@
             console.log(userName);
             if (userName == "") {
                 document.getElementById(vaibhav).innerText = "Please Enter " + mayur;
+                document.getElementById(vaibhav).style.color = "red";
+                // document.getElementById(vaibhav).style.position = "absolute";
+                // document.getElementById(vaibhav).style.top = "50px";
                 // console.log(userName);
                 // console.log("User name is empty");
+            }
+            else{
+                document.getElementById(vaibhav).innerText = "";
+
             }
         }
         // handleUname()
