@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamically Create Element</title>
+
+    <style>
+        #heading{
+            border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+      <button id="btn" onclick="addPara()">Creating Element Dynamically</button>
+    <div id="heading">Dynamically Create Element</div>
+    <!-- <input type="text" name="" id="heading"> -->
+
+    <script>
+      function addPara() {
+          let node = document.createElement("h2");
+          let textNode = document.createTextNode("This is The Magic of JavaScript.");
+          node.appendChild(textNode);
+          document.getElementById("heading").appendChild(node);
+        console.log('called');
+      }
+    </script>
+  </body>
+</html>
