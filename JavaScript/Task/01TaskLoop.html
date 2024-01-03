@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Change</title>
+  </head>
+  <body>
+    <div
+      id="colorDiv"
+      style="width: 100px; height: 100px; border: 1px solid black"
+    ></div>
+    <button onclick="toggleColorChange()">Start Color Change</button>
+
+    <script>
+      const colors = ["red", "blue", "green", "yellow", "orange"];
+      let currentColorIndex = 0;
+      let isColorChanging = false;
+
+      function changeColor() {
+        const colorDiv = document.getElementById("colorDiv");
+        colorDiv.style.backgroundColor = colors[currentColorIndex];
+        currentColorIndex = (currentColorIndex + 1) % colors.length;
+      }
+
+      function startColorChange() {
+        isColorChanging = true;
+        (function loop() {
+          if (isColorChanging) {
+            changeColor();
+            setTimeout(loop, 1000); // Change color every 1 second
+          }
+        })();
+      }
+
+      function stopColorChange() {
+        isColorChanging = false;
+      }
+
+      function toggleColorChange() {
+        if (!isColorChanging) {
+          startColorChange();
+          document.querySelector("button").textContent = "Stop Color Change";
+        } else {
+          stopColorChange();
+          document.querySelector("button").textContent = "Start Color Change";
+        }
+      }
+    </script>
+  </body>
+</html>
