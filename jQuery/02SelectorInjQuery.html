@@ -10,6 +10,15 @@
     <button class="btnClass">Class Selector</button>
     <button id="btnId">ID Selector</button>
 
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
     <script src="js/jquery-3.7.1.min.js"></script>
 
     <script>
@@ -35,6 +44,10 @@
         // Id Selector
 
         $("#btnId").click(function () {
+          console.log("Id Selector is Called");
+        });
+        $("p").click(function () {
+          $(this).css({color: "red"})
           console.log("Id Selector is Called");
         });
       });
