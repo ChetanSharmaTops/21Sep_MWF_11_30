@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="box">
+        <img src="" alt="" id="slides">
+    </div>
+
+<button onclick="next()">Next</button>
+<button onclick="back()">Back</button>
+
+
+
+<script>
+
+    let i = 0
+    let count = [1,2,3,4,5]
+    function next() {
+        i++
+        console.log(count[i]);
+        if(i > count.length){
+            i=0
+        }
+    }
+    function back() {
+        i--
+        console.log(count[i]);
+        if(i < 0 ){
+            i= count.length
+        }
+    }
+</script>
+
+</body>
+</html>
