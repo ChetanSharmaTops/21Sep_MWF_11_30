@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function udja() {
+        //     document.write("kuch bhi")
+        //     document.getElementById('body').style.backgroundColor = 'red'
+            
+        // }
+    </script>
+    <style>
+        body{
+            background-color: teal;
+        }
+    </style>
+</head>
+<body id="body">
+    
+    <h1>Hello</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p id="para"></p>
+    <button onclick="udja()">Abhi Udega</button>
+    <script>
+        // document.write("kuch bhi")
+        function udja() {
+            // document.write("kuch bhi")
+            document.getElementById('para').innerText = 'kuch bhi'
+            document.getElementById('body').style.backgroundColor = 'red'
+        
+        
+        }
+    </script>
+</body>
+</html>
