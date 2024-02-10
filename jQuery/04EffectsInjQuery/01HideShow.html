@@ -20,7 +20,7 @@
     <button class="btnShow">Show</button>
     <button class="btnToggle">Toggle</button>
 
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -40,7 +40,7 @@
 
         // Toggle
 
-        $(".btnToggle").click(function () {
+        $(".btnToggle").on('click',function () {
           $(".box").toggle();
           console.log("Box is Toggle");
         });
