@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="" id="img" alt="" />
+    <button onclick="handleChange()">change</button>
+
+    <script>
+      function handleChange() {
+        let a = document.getElementById("img");
+
+        // if (img == "Army.jpg") {
+        if (
+          a.src ==
+          "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
+        ) {
+          //   img.src = "army.webp";
+          a.src =
+            "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg";
+        } else {
+          //   img.src = "Army.jpg";
+          a.src =
+            "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>
