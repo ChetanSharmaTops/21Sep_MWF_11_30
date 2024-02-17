@@ -11,27 +11,42 @@
     </style>
   </head>
   <body>
-    <img src="" id="img" alt="" />
+    <img src="army.webp" id="img" alt="" />
     <button onclick="handleChange()">change</button>
 
     <script>
       function handleChange() {
         let a = document.getElementById("img");
 
-        // if (img == "Army.jpg") {
-        if (
-          a.src ==
-          "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
-        ) {
-          //   img.src = "army.webp";
-          a.src =
-            "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg";
+        if (a.src == "Army.jpg") {
+          // if (
+          // a.src ==
+          // "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
+          // ) {
+          a.src = "army.webp";
+          // a.src =
+          // "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg";
         } else {
-          //   img.src = "Army.jpg";
-          a.src =
-            "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg";
+          a.src = "Army.jpg";
+          // a.src =
+          // "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg";
         }
       }
+
+      // const myImg = document.getElementById("img");
+
+      // let isFirstImage = true;
+
+      // function handleChange() {
+      //   if (isFirstImage) {
+      //     // if ((myImg.src = "")) {
+      //       myImg.src = "https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg";
+      //     } else {
+      //       myImg.src = "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg";
+      //     }
+      //     isFirstImage = !isFirstImage;
+      //   }
+      // }
     </script>
   </body>
 </html>

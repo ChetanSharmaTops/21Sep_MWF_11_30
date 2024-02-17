@@ -144,6 +144,48 @@
       // console.log(a);
 
 
+      // Loops In JS 
+
+      // for 
+      //    => for in
+
+      let details = {
+        name: 'xyz',
+        age: 20,
+        contact: 20545453435,
+        email: 'xyz@google.com',
+        isLoggedIn: true,
+      }
+
+      for (const key in details) {
+        // console.log(details);
+          console.log(key);
+          console.log(details[key]);
+          
+        }
+
+      //    => for of
+
+      let arr = [10,20,30,40,50]
+
+      for (const iterator of arr) {
+        console.log(iterator);
+        
+      }
+
+      //    => for each
+
+
+      arr.forEach(element => {
+        console.log(element);
+        document.write(`<div>${element}</div>`)
+        
+      });
+
+      // while
+      // do while 
+
+
 
       
 
@@ -161,3 +203,17 @@
 3. Explain the basic syntax of JavaScript. 
 4. How does JavaScript differ from other programming languages?  
 5. What are the best practices to write clean and efficient JavaScript code? -->
+
+
+
+<style>
+  div{
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    color: brown;
+    font-size: 30px;
+    margin: 10px;
+  }
+</style>
