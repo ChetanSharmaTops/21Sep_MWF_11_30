@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number</title>
+  </head>
+  <body>
+    <script>
+      let a = Math.random() * 100;
+      a = Number.parseInt(a);
+      console.log(a);
+
+      let guessNumber = prompt("Guess the Number");
+      console.log(guessNumber);
+
+      if (guessNumber == a) {
+        console.log("egual");
+      } else if (guessNumber > a) {
+        console.log("greater than a");
+      } else if (guessNumber < a) {
+        console.log("less than a");
+      } else {
+        console.log("Invalid Number");
+        do {
+          let guessNumber = prompt("Guess the Number");
+        } while (guessNumber == a);
+      }
+    </script>
+  </body>
+</html>
